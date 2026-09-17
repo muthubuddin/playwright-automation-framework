@@ -10,11 +10,13 @@ class myObjectExample{
         console.log(employee.empName);
     console.log(employee.role);
     console.log(employee[key]);
-
-    const employees =[{empName:"mujju",empRole:"lead",empID:"1234"},{
-        empName:"afshan",empRole:"QA",empID:"12345"
-    }];
-
+        
+    const employees = [
+        { empName: "mujju", empRole: "lead" },
+        { empName: "afshan", empRole: "QA" }
+    ];
+    
+    //for of loop
     for(const users of employees){
         console.log("forloop"+users.empName);
     }
@@ -40,4 +42,4 @@ class myObjectExample{
 const myObject = new myObjectExample();
 
  myObject.myEmployee();
-//myObject.validateStringOccurence("mujju");
+myObject.validateStringOccurence("mujju");
