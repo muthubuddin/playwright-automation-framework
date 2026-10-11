@@ -1,9 +1,9 @@
-class myObjectExample{
+class MyObjectExample {
 
     myEmployee(){
         const employee ={
         empName:"mujju",
-        empid:"1234",
+        empId:"1234",
         role:"lead"
         };
         const key=("role");
@@ -26,11 +26,11 @@ class myObjectExample{
         const map = new Map();
         const charText = name.split("");
         for (let i = 0; i < charText.length; i++) {
-            const ch = charText[i];
-            if (map.has(ch)) {
-                map.set(ch, map.get(ch) + 1);
+            const char = charText[i];
+            if (map.has(char)) {
+                map.set(char, map.get(char) + 1);
             } else {
-                map.set(ch, 1);
+                map.set(char, 1);
             }
         }
         console.log(map);
@@ -39,7 +39,7 @@ class myObjectExample{
     
 }
 
-const myObject = new myObjectExample();
+const myObject = new MyObjectExample();
 
  myObject.myEmployee();
 myObject.validateStringOccurence("mujju");
