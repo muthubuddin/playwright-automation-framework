@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": ["node"]
+  },
+  "include": [
+    "tests/**/*.ts",
+    "pages/**/*.ts",
+    "testData/**/*.ts",
+    "playwright.config.ts"
+  ]
+}
