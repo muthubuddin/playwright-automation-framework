@@ -65,10 +65,50 @@ revalidateArray(){
    console.log(list.includes("search"));
    console.log(list.join("|"))
 }
+
+arrayExample2(){
+    const sam=["java","syspress","c","selenium"];
+    console.log(sam.length);
+    console.log(sam.findLast);
+     console.log(sam.indexOf("syspress"));
+     sam.pop();
+     sam.shift()
+ console.log(sam);
+ sam.push("rest assured");
+ sam.unshift("java");
+ console.log(sam);
+ // manpulation Slice
+ console.log(sam.slice(1,3));
+ console.log(sam.splice(1,3));
+ console.log(sam.splice(1,3));
+ console.log(sam);
+ // over wriding 
+ console.log(sam.splice(0,0,"appium"));
+ console.log(sam);
+
+ console.log(sam.splice(2,0,"postman"));
+ console.log(sam);
+ console.log(sam.splice(-2,0,"charlesproxy"));
+ console.log(sam);
+ console.log(sam.splice(0,0,"restAPI"));
+ console.log(sam);
+ const list=["mujju","sami","raj"];
+ list.concat(sam);
+ console.log("new List"+list);
+ sam.sort();
+  sam.forEach(course => console.log(course)); 
+}
+joinExample(){
+    let name="muthubuddin";
+    let list=name.split("").sort().join(",");
+    console.log(list); 
+}
+
+
 }
 const array = new arrayExamples();
 const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11];
 //array.myTest();
 // pass the array here — that value becomes "arr" inside the method
 //array.reverseArray(array.testArray);
-array.revalidateArray();
+array.joinExample();
